@@ -25,3 +25,5 @@ public class komputer {
         System.out.println("Processor : " + processor);
     }
 }
+
+

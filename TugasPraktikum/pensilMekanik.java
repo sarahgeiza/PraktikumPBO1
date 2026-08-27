@@ -1,6 +1,6 @@
 package TugasPraktikum;
 
-public class pensilMekanik {
+public class pensilMekanik extends pensil {
     private int panjang;
     private int isi;
 

@@ -1,6 +1,6 @@
 package TugasPraktikum;
 
-public class PensilKayu {
+public class PensilKayu extends pensil {
     private int panjang;
     private int ketebalan;
 
