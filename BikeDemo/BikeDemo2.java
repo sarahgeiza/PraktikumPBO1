@@ -19,7 +19,5 @@ public class BikeDemo2 {
         roadBike1.speedAcceleration(15);
         roadBike1.gearChange(4);
         roadBike1.printInfo();
-
-
     }
 }
