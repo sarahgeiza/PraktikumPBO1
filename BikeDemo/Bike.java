@@ -30,7 +30,7 @@ public class Bike{
     }
     public void printInfo(){
         System.out.println("Brand : " + brand);
-        System.out.println("Sppeed : " + speed);
+        System.out.println("Speed : " + speed);
         System.out.println("Gear : " + gear);
     }
 }
