@@ -3,45 +3,72 @@ package TugasPraktikum;
 public class demo {
     public static void main(String[] args) {
 
+        komputer komputer1 = new komputer();
+        laptop laptop1 = new laptop();
+        PC pc1 = new PC();
+        pensil pensil1 = new pensil();
+        PensilKayu pensilKayu1 = new PensilKayu();
+        pensilMekanik pensilMekanik1 = new pensilMekanik();
+
+        komputer1.setMerk("Lenovo");
+        komputer1.setProcessor("Intel Core i5");
+
+        laptop1.setMerk("Lenovo");
+        laptop1.setProcessor("Intel Core i5");
+        laptop1.setRam(8);
+        laptop1.setStorage(512);
+
+        pc1.setMerk("Lenovo");
+        pc1.setProcessor("Intel Core i5");
+        pc1.setRam(16);
+        pc1.setStorage(1000);
+
+        pensil1.setMerk("Faber-Castell");
+        pensil1.setWarna("Hitam");
+
+        pensilKayu1.setMerk("Faber-Castell");
+        pensilKayu1.setWarna("Hitam");
+        pensilKayu1.setPanjang(17);
+        pensilKayu1.setKetebalan(2);
+
+        pensilMekanik1.setMerk("Faber-Castell");
+        pensilMekanik1.setWarna("Hitam");
+        pensilMekanik1.setPanjang(15);
+        pensilMekanik1.setIsi(5);
+
         System.out.println("Komputer");
-        System.out.println("Komputer dinyalakan.");
-        System.out.println("Komputer dimatikan.");
-        System.out.println("Merk : Lenovo");
-        System.out.println("Processor : Intel Core i5");
+        komputer1.nyalakan();
+        komputer1.matikan();
+        komputer1.printInfo();
         System.out.println();
 
         System.out.println("Laptop");
-        System.out.println("Layar laptop dibuka.");
-        System.out.println("Layar laptop ditutup.");
-        System.out.println("RAM : 8 GB");
-        System.out.println("Storage : 512 GB");
+        laptop1.bukaLayar();
+        laptop1.tutupLayar();
+        laptop1.printInfoLaptop();
         System.out.println();
 
         System.out.println("PC");
-        System.out.println("PC dinyalakan.");
-        System.out.println("PC dimatikan.");
-        System.out.println("RAM : 16 GB");
-        System.out.println("Storage : 1000 GB");
+        pc1.nyalakanPC();
+        pc1.matikanPC();
+        pc1.printInfoPC();
         System.out.println();
 
         System.out.println("Pensil");
-        System.out.println("Pensil digunakan untuk menulis.");
-        System.out.println("Pensil diasah.");
-        System.out.println("Merk : Faber-Castell");
-        System.out.println("Warna : Hitam");
+        pensil1.tulis();
+        pensil1.asah();
+        pensil1.printInfo();
         System.out.println();
 
         System.out.println("Pensil Kayu");
-        System.out.println("Pensil kayu diraut.");
-        System.out.println("Pensil kayu digunakan untuk menulis.");
-        System.out.println("Panjang : 17 cm");
-        System.out.println("Ketebalan : 2 mm");
+        pensilKayu1.raut();
+        pensilKayu1.gunakan();
+        pensilKayu1.printInfoPensilKayu();
         System.out.println();
 
         System.out.println("Pensil Mekanik");
-        System.out.println("Isi pensil mekanik dikeluarkan.");
-        System.out.println("Isi pensil mekanik diganti.");
-        System.out.println("Panjang : 15 cm");
-        System.out.println("Jumlah isi : 5");
+        pensilMekanik1.tekanIsi();
+        pensilMekanik1.isiUlang();
+        pensilMekanik1.printInfoPensilMekanik();
     }
 }
